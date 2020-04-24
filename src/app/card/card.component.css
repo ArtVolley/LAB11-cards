@@ -1,0 +1,9 @@
+.card
+{
+    width: 260px;
+    margin: 12px;
+    column-count: 4;
+    margin-left: auto;
+    margin-right: auto;
+}
+

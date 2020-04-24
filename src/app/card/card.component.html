@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="card"
+            style="text-align: center; color: white;"
+            *ngFor="let card of cards"
+            [style.background-color]="card.status"
+        >
+            <div class="card-body">
+              <h5 class="card-title">#{{ card.id }}</h5>
+              <p class="card-text">{{ card.name }}</p>
+              <a 
+                href="#" 
+                class="btn btn-light" 
+                (click)="onDeleteCard(card.id)"
+              >
+                УДАЛИТЬ
+              </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 m-2" style="text-align: center;">
+      <h1>КАРТОЧКИ</h1>
+    </div>
+  </div>
+</div>
+<app-add-card (addCard) = "onAddCard($event)"></app-add-card>
+<app-card [cards]="cards" (deleteCard) = "onDeleteById($event)"></app-card>
+<!-- <hr>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="block" (mousemove)="getCoords($event)"></div>
+      <p>X: {{blockX}}  Y: {{blockY}}</p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="inputValue">
+      </div>
+      <p>{{inputValue}}</p>
+    </div>
+  </div>
+</div>
+<hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <input type="text" class="form-control" #someInput>
+        </div>
+        <button class="btn btn-primary" (click)="getData(someInput)">Кнопка</button>
+      </div>
+    </div>
+  </div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p *ngIf="flag=== true">FLAG ON</p>
+      <p *ngIf="flag=== false">FLAG OFF</p>
+
+      <ng-container *ngIf="flag === true; else elseTemplate">
+        <p>on</p>
+      </ng-container>
+      <ng-template #elseTemplate>
+        <p>off</p>
+      </ng-template>
+      
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let item of someArray; let item_index = index">
+      {{item_index + 1}}: {{item}}
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p [style.font-size] ="fontSize + 'px'">Какой-то текст</p>
+      <p 
+        [ngStyle]="{'font-size' : fontSize + 'px'}"
+        [ngClass]="{'color-green' : true}"
+      >Еще что-то</p>
+    </div>
+  </div>
+</div>
+<hr> -->
